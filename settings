@@ -1,6 +1,5 @@
 {
-    "files.autoSave": "onFocusChange",
-    "editor.fontSize": 20,
+    "editor.fontSize": 15,
     "editor.fontFamily": "Meslo LG S",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
@@ -26,7 +25,7 @@
     "php-cs-fixer.documentFormattingProvider": true,
     "editor.wordWrap": "on",
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Noctis Lilac",
+    "workbench.colorTheme": "Owlet (Oceanic Next)",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.renameOnType": true,
@@ -42,5 +41,15 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "liveServer.settings.donotShowInfoMsg": true
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDelete": false,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.syntaxProfiles": {
+        "javascript": ["jsx", "html"]
+    },
+    "files.autoSaveDelay": 500,
+    "liveServer.settings.donotVerifyTags": true
 }
