@@ -1,1 +1,1 @@
-# Visual-Studio-Code-Settings
+# VisualStudioCodeSettings
