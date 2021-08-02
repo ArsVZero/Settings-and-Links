@@ -12,10 +12,10 @@
         "editor.defaultFormatter": "junstyle.php-cs-fixer"
     },
     "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.executablePathWindows": "C:/Users/ASUS/AppData/Roaming/Composer/vendor/bin/php-cs-fixer.bat",
+    "php-cs-fixer.executablePathWindows": "C:/Users/arsns/AppData/Roaming/Composer/vendor/bin/php-cs-fixer.bat",
     "php-cs-fixer.onsave": true,
     "php-cs-fixer.rules": "@PSR2",
-    "php-cs-fixer.config": "C:/Users/ASUS/config.php_cs",
+    "php-cs-fixer.config": "C:/Users/arsns/config.php_cs",
     "php-cs-fixer.allowRisky": false, //it is safe not to allow risky linting
     "php-cs-fixer.pathMode": "override",
     "php-cs-fixer.exclude": [],
@@ -25,11 +25,9 @@
     "php-cs-fixer.documentFormattingProvider": true,
     "editor.wordWrap": "on",
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Owlet (Espresso)",
     "editor.suggestSelection": "first",
     "editor.linkedEditing": true,
     "html.format.endWithNewline": true,
-    "html.format.indentHandlebars": true,
     "html.format.indentInnerHtml": true,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
@@ -51,7 +49,7 @@
     },
     "files.autoSaveDelay": 500,
     "liveServer.settings.donotVerifyTags": true,
-    "php-cs-fixer.lastDownload": 1616069862905,
+    "php-cs-fixer.lastDownload": 1627530482674,
     "autoimport.doubleQuotes": true,
     "prettier.jsxSingleQuote": true,
     "code-runner.runInTerminal": true,
@@ -108,5 +106,19 @@
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
     },
     "tabnine.experimentalAutoImports": true,
-    "workbench.productIconTheme": "fluent-icons"
+    "workbench.productIconTheme": "fluent-icons",
+    "html.format.indentHandlebars": true,
+    "files.autoSave": "onFocusChange",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "C_Cpp.addNodeAddonIncludePaths": true,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.clang_format_sortIncludes": true,
+    "emmet.triggerExpansionOnTab": true,
+    "blade.format.enable": true,
+    "[blade]": {
+        "editor.autoClosingBrackets": "always"
+    },
+    "workbench.colorTheme": "Default Light+",
+    "cSpell.userWords": ["LARAVEL", "Otwell", "fideloper"],
+    "workbench.statusBar.visible": false
 }
