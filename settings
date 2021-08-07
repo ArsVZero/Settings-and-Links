@@ -1,6 +1,6 @@
 {
     "editor.fontSize": 15,
-    "editor.fontFamily": "Meslo LG S",
+    "editor.fontFamily": "MesloLGS NF",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "php.suggest.basic": false,
@@ -15,7 +15,7 @@
     "php-cs-fixer.executablePathWindows": "C:/Users/arsns/AppData/Roaming/Composer/vendor/bin/php-cs-fixer.bat",
     "php-cs-fixer.onsave": true,
     "php-cs-fixer.rules": "@PSR2",
-    "php-cs-fixer.config": "C:/Users/arsns/config.php_cs",
+    "php-cs-fixer.config": "C:/Users/arsns/.php-cs-fixer",
     "php-cs-fixer.allowRisky": false, //it is safe not to allow risky linting
     "php-cs-fixer.pathMode": "override",
     "php-cs-fixer.exclude": [],
@@ -116,9 +116,12 @@
     "emmet.triggerExpansionOnTab": true,
     "blade.format.enable": true,
     "[blade]": {
-        "editor.autoClosingBrackets": "always"
+        "editor.autoClosingBrackets": "always",
+        "editor.defaultFormatter": "onecentlin.laravel-blade"
     },
     "workbench.colorTheme": "Default Light+",
-    "cSpell.userWords": ["LARAVEL", "Otwell", "fideloper"],
-    "workbench.statusBar.visible": false
+    "cSpell.userWords": ["LARAVEL", "Otwell", "fideloper", "mailhog"],
+    "workbench.statusBar.visible": false,
+    "html.format.templating": true,
+    "security.workspace.trust.untrustedFiles": "open"
 }
