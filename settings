@@ -2,7 +2,6 @@
     "editor.fontSize": 15,
     "editor.fontFamily": "MesloLGS NF",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
     "php.suggest.basic": false,
     "[html, css, javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -23,6 +22,15 @@
     "php-cs-fixer.autoFixBySemicolon": true,
     "php-cs-fixer.formatHtml": true,
     "php-cs-fixer.documentFormattingProvider": true,
+    "namespaceResolver.exclude": "**/node_modules/**", // Exclude glob pattern while finding files
+    "namespaceResolver.showMessageOnStatusBar": false, // Show message on status bar instead of notification box
+    "namespaceResolver.autoSort": true, // Auto sort after imports
+    "namespaceResolver.sortOnSave": false, // Auto sort when a file is saved
+    "namespaceResolver.sortAlphabetically": false, // Sort imports in alphabetical order instead of line length
+    "namespaceResolver.sortNatural": false, // Sort imports using a 'natural order' algorithm
+    "namespaceResolver.leadingSeparator": true, // Expand class with leading namespace separator
+    "namespaceResolver.highlightOnSave": false, // Auto highlight not imported and not used when a file is saved
+    "namespaceResolver.highlightOnOpen": false, // Auto highlight not imported and not used when a file is opened
     "editor.wordWrap": "on",
     "window.zoomLevel": 1,
     "editor.suggestSelection": "first",
@@ -49,7 +57,7 @@
     },
     "files.autoSaveDelay": 500,
     "liveServer.settings.donotVerifyTags": true,
-    "php-cs-fixer.lastDownload": 1627530482674,
+    "php-cs-fixer.lastDownload": 1628464368376,
     "autoimport.doubleQuotes": true,
     "prettier.jsxSingleQuote": true,
     "code-runner.runInTerminal": true,
@@ -119,9 +127,19 @@
         "editor.autoClosingBrackets": "always",
         "editor.defaultFormatter": "onecentlin.laravel-blade"
     },
-    "workbench.colorTheme": "Default Light+",
-    "cSpell.userWords": ["LARAVEL", "Otwell", "fideloper", "mailhog"],
+    "cSpell.userWords": [
+        "LARAVEL",
+        "Otwell",
+        "addcategory",
+        "addproduct",
+        "editproduct",
+        "fideloper",
+        "livewire",
+        "mailhog"
+    ],
     "workbench.statusBar.visible": false,
     "html.format.templating": true,
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "Default Light+",
+    "workbench.sideBar.location": "right"
 }
