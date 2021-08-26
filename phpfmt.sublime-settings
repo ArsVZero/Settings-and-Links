@@ -1,0 +1,24 @@
+{
+	"autocomplete": true,
+	"autoimport": true,
+	"enable_auto_align": true,
+	"format_on_save": true,
+	"ignore": "Parent",
+	"indent_with_space": 4,
+	"passes":
+	[
+		"ReindentSwitchBlocks",
+		"OrderAndRemoveUseClauses",
+		"PSR2EmptyFunction",
+		"StripSpaceWithinControlStructures",
+		"ShortArray",
+		"SpaceBetweenMethods",
+		"AutoSemicolon"
+	],
+	"php_bin": "C:/xampp/php/php.exe",
+	"psr2": true,
+	"smart_linebreak_after_curly": true,
+	"version": 4,
+	"visibility_order": true,
+	"yoda": true,
+}
