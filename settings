@@ -1,20 +1,41 @@
 {
-    "editor.fontSize": 15,
-    "editor.fontFamily": "MesloLGS NF",
+    "editor.fontSize": 20,
+    "editor.fontFamily": "Meslo LG S",
     "workbench.iconTheme": "material-icon-theme",
     "php.suggest.basic": false,
-    "[html, css, javascript]": {
+    "[html]": {
+        "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[c]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools"
     },
     "[php]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "junstyle.php-cs-fixer"
     },
+    "[blade]": {
+        "editor.autoClosingBrackets": "always",
+        "editor.defaultFormatter": "onecentlin.laravel-blade"
+    },
     "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.executablePathWindows": "C:/Users/arsns/AppData/Roaming/Composer/vendor/bin/php-cs-fixer.bat",
+    "php-cs-fixer.executablePathWindows": "C:/Users/PC/AppData/Roaming/Composer/vendor/bin/php-cs-fixer.bat",
     "php-cs-fixer.onsave": true,
     "php-cs-fixer.rules": "@PSR2",
-    "php-cs-fixer.config": "C:/Users/arsns/.php-cs-fixer",
+    "php-cs-fixer.config": "C:/Users/PC/.php-cs-fixer.php",
     "php-cs-fixer.allowRisky": false, //it is safe not to allow risky linting
     "php-cs-fixer.pathMode": "override",
     "php-cs-fixer.exclude": [],
@@ -36,28 +57,25 @@
     "editor.suggestSelection": "first",
     "editor.linkedEditing": true,
     "html.format.endWithNewline": true,
-    "html.format.indentInnerHtml": true,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "liveServer.settings.donotShowInfoMsg": true,
     "explorer.confirmDelete": false,
     "html-css-class-completion.enableEmmetSupport": true,
     "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
+        "javascript": "javascriptreact",
+        "django-html": "html"
     },
     "emmet.syntaxProfiles": {
         "javascript": ["jsx", "html"]
     },
     "files.autoSaveDelay": 500,
     "liveServer.settings.donotVerifyTags": true,
-    "php-cs-fixer.lastDownload": 1628464368376,
+    "php-cs-fixer.lastDownload": 1633758787928,
     "autoimport.doubleQuotes": true,
     "prettier.jsxSingleQuote": true,
     "code-runner.runInTerminal": true,
@@ -115,7 +133,6 @@
     },
     "tabnine.experimentalAutoImports": true,
     "workbench.productIconTheme": "fluent-icons",
-    "html.format.indentHandlebars": true,
     "files.autoSave": "onFocusChange",
     "editor.multiCursorModifier": "ctrlCmd",
     "C_Cpp.addNodeAddonIncludePaths": true,
@@ -123,23 +140,24 @@
     "C_Cpp.clang_format_sortIncludes": true,
     "emmet.triggerExpansionOnTab": true,
     "blade.format.enable": true,
-    "[blade]": {
-        "editor.autoClosingBrackets": "always",
-        "editor.defaultFormatter": "onecentlin.laravel-blade"
-    },
-    "cSpell.userWords": [
-        "LARAVEL",
-        "Otwell",
-        "addcategory",
-        "addproduct",
-        "editproduct",
-        "fideloper",
-        "livewire",
-        "mailhog"
-    ],
     "workbench.statusBar.visible": false,
     "html.format.templating": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "Default Light+",
-    "workbench.sideBar.location": "right"
+    "workbench.colorTheme": "Idea intellij light theme",
+    "workbench.sideBar.location": "right",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "diffEditor.wordWrap": "on",
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "html.format.indentInnerHtml": true,
+    "html.format.indentHandlebars": true
 }
