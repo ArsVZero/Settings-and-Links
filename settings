@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 20,
+    "editor.fontSize": 15,
     "editor.fontFamily": "Meslo LG S",
     "workbench.iconTheme": "material-icon-theme",
     "php.suggest.basic": false,
@@ -12,6 +12,10 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -30,6 +34,14 @@
     "[blade]": {
         "editor.autoClosingBrackets": "always",
         "editor.defaultFormatter": "onecentlin.laravel-blade"
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[java]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "redhat.java"
     },
     "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
     "php-cs-fixer.executablePathWindows": "C:/Users/PC/AppData/Roaming/Composer/vendor/bin/php-cs-fixer.bat",
@@ -132,7 +144,6 @@
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
     },
     "tabnine.experimentalAutoImports": true,
-    "workbench.productIconTheme": "fluent-icons",
     "files.autoSave": "onFocusChange",
     "editor.multiCursorModifier": "ctrlCmd",
     "C_Cpp.addNodeAddonIncludePaths": true,
@@ -159,5 +170,19 @@
         "**/requirements{/**,*}.{txt,in}": "pip-requirements"
     },
     "html.format.indentInnerHtml": true,
-    "html.format.indentHandlebars": true
+    "html.format.indentHandlebars": true,
+    "C_Cpp.vcFormat.indent.accessSpecifiers": true,
+    "C_Cpp.vcFormat.indent.braces": true,
+    "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
+    "C_Cpp.vcFormat.indent.caseLabels": true,
+    "C_Cpp.vcFormat.indent.preserveComments": true,
+    "C_Cpp.vcFormat.indent.preserveWithinParentheses": true,
+    "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
+    "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+    "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+    "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
+    "C_Cpp.vcFormat.space.afterCastCloseParenthesis": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "cmake.configureOnOpen": true,
+    "cmake.cmakePath": "C:/Program Files/CMake/bin"
 }
