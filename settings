@@ -1,11 +1,12 @@
 {
-    "editor.fontSize": 15,
+    "editor.fontSize": 10,
     "editor.fontFamily": "Meslo LG S",
     "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 1,
     "php.suggest.basic": false,
     "[html]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[css]": {
         "editor.formatOnSave": true,
@@ -13,7 +14,7 @@
     },
     "[javascript]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[javascriptreact]": {
         "editor.formatOnSave": true,
@@ -29,7 +30,8 @@
     },
     "[php]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "junstyle.php-cs-fixer"
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+        // "editor.defaultFormatter": "junstyle.php-cs-fixer"
     },
     "[blade]": {
         "editor.autoClosingBrackets": "always",
@@ -43,11 +45,28 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "redhat.java"
     },
+    "phpfmt.php_bin": "\"C:\\xampp\\php\\php.exe\"",
+    "phpfmt.passes": [
+        "PSR2KeywordsLowerCase",
+        "PSR2LnAfterNamespace",
+        "PSR2CurlyOpenNextLine",
+        "PSR2ModifierVisibilityStaticOrder",
+        "PSR2SingleEmptyLineAndStripClosingTag",
+        "ReindentSwitchBlocks",
+        "AlignDoubleArrow",
+        "AlignEquals",
+        "AlignPHPCode",
+        "AutoSemicolon",
+        "ShortArray",
+        "TrimSpaceBeforeSemicolon"
+    ],
+    "phpfmt.exclude": ["ReindentComments", "StripNewlineWithinClassBody"],
+    "phpfmt.psr2": false,
     "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.executablePathWindows": "C:/Users/PC/AppData/Roaming/Composer/vendor/bin/php-cs-fixer.bat",
+    "php-cs-fixer.executablePathWindows": "C:/Users/arsns/AppData/Roaming/Composer/vendor/bin/php-cs-fixer.bat",
     "php-cs-fixer.onsave": true,
     "php-cs-fixer.rules": "@PSR2",
-    "php-cs-fixer.config": "C:/Users/PC/.php-cs-fixer.php",
+    "php-cs-fixer.config": "C:/Users/arsns/.php-cs-fixer.php",
     "php-cs-fixer.allowRisky": false, //it is safe not to allow risky linting
     "php-cs-fixer.pathMode": "override",
     "php-cs-fixer.exclude": [],
@@ -65,7 +84,6 @@
     "namespaceResolver.highlightOnSave": false, // Auto highlight not imported and not used when a file is saved
     "namespaceResolver.highlightOnOpen": false, // Auto highlight not imported and not used when a file is opened
     "editor.wordWrap": "on",
-    "window.zoomLevel": 1,
     "editor.suggestSelection": "first",
     "editor.linkedEditing": true,
     "html.format.endWithNewline": true,
@@ -87,7 +105,7 @@
     },
     "files.autoSaveDelay": 500,
     "liveServer.settings.donotVerifyTags": true,
-    "php-cs-fixer.lastDownload": 1633758787928,
+    "php-cs-fixer.lastDownload": 1670489189845,
     "autoimport.doubleQuotes": true,
     "prettier.jsxSingleQuote": true,
     "code-runner.runInTerminal": true,
@@ -154,13 +172,14 @@
     "workbench.statusBar.visible": false,
     "html.format.templating": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "Idea intellij light theme",
     "workbench.sideBar.location": "right",
     "files.exclude": {
         "**/.classpath": true,
+        "**/.factorypath": true,
         "**/.project": true,
         "**/.settings": true,
-        "**/.factorypath": true
+        "**/bin": true,
+        "**/obj": true
     },
     "diffEditor.wordWrap": "on",
     "files.associations": {
@@ -182,7 +201,66 @@
     "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
     "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
     "C_Cpp.vcFormat.space.afterCastCloseParenthesis": true,
-    "C_Cpp.updateChannel": "Insiders",
     "cmake.configureOnOpen": true,
-    "cmake.cmakePath": "C:/Program Files/CMake/bin"
+    "cmake.cmakePath": "C:/Program Files/CMake/bin",
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "debug.console.fontSize": 15,
+    "terminal.integrated.fontSize": 15,
+    "explorer.compactFolders": false,
+    "[aspnetcorerazor]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "csharpextensions.privateMemberPrefix": "_",
+    "csharpextensions.useThisForCtorAssignments": false,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "redhat.telemetry.enabled": true,
+    "java.configuration.runtimes": [
+        // {
+        //     "name": "JavaSE-1.8",
+        //     "path": "/path/to/jdk-8"
+        // },
+        // {
+        //     "name": "JavaSE-11",
+        //     "path": "/path/to/jdk-11"
+        // },
+        {
+            "name": "JavaSE-1.8",
+            "path": "C:/Program Files/Java/jdk1.8.0_351/",
+            "default": true
+        }
+    ],
+    "java.externalDependencies": [
+        "junit:junit:jar:4.12:test", // Maven format
+        "junit:junit:4.12" // Gradle-style format is also allowed
+    ],
+    "rsp-ui.enableStartServerOnActivation": [
+        {
+            "id": "redhat.vscode-community-server-connector",
+            "name": "Community Server Connector",
+            "startOnActivation": true
+        }
+    ],
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "phpcs.enable": false,
+    "phpcs.autoConfigSearch": false,
+    "phpcs.showWarnings": false,
+    "settingsSync.ignoredExtensions": ["ikappas.phpcs"],
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.hideCursorInOverviewRuler": true,
+    "terminal.integrated.cursorBlinking": true,
+    "xmlTools.enableXmlTreeViewCursorSync": true,
+    "mssql.query.cursorCloseOnCommit": true,
+    "editor.suggest.localityBonus": true,
+    "search.seedWithNearestWord": true,
+    "workbench.editorAssociations": {
+        "*.lock": "default"
+    },
+    "editor.accessibilitySupport": "off",
+    "workbench.colorTheme": "Idea intellij light theme"
 }
