@@ -272,5 +272,26 @@
             "trustServerCertificate": true,
             "password": ""
         }
-    ]
+    ],
+    "mssql.applyLocalization": true,
+    "mssql.copyIncludeHeaders": true,
+    "mssql.format.alignColumnDefinitionsInColumns": true,
+    "mssql.format.datatypeCasing": "uppercase",
+    "mssql.format.keywordCasing": "uppercase",
+    "mssql.format.placeCommasBeforeNextStatement": true,
+    "mssql.format.placeSelectStatementReferencesOnNewLine": true,
+    "mssql.ignorePlatformWarning": true,
+    "mssql.intelliSense.lowerCaseSuggestions": true,
+    "mssql.logDebugInfo": true,
+    "mssql.persistQueryResultTabs": true,
+    "mssql.query.alwaysEncryptedParameterization": true,
+    "mssql.query.ansiDefaults": true,
+    "mssql.query.implicitTransactions": true,
+    "mssql.query.noCount": true,
+    "mssql.query.noExec": true,
+    "mssql.query.parseOnly": true,
+    "mssql.query.statisticsIO": true,
+    "mssql.query.statisticsTime": true,
+    "mssql.query.xactAbortOn": true,
+    "mssql.showBatchTime": true
 }
