@@ -1,9 +1,13 @@
 {
-    "editor.fontSize": 10,
-    "editor.fontFamily": "Meslo LG S",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Monaco",
     "workbench.iconTheme": "material-icon-theme",
     "window.zoomLevel": 1,
     "php.suggest.basic": false,
+    "[csharp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    },
     "[html]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "vscode.html-language-features"
@@ -86,7 +90,6 @@
     "editor.wordWrap": "on",
     "editor.suggestSelection": "first",
     "editor.linkedEditing": true,
-    "html.format.endWithNewline": true,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -98,19 +101,20 @@
     "html-css-class-completion.enableEmmetSupport": true,
     "emmet.includeLanguages": {
         "javascript": "javascriptreact",
-        "django-html": "html"
+        "django-html": "html",
+        "aspnetcorerazor": "html"
     },
     "emmet.syntaxProfiles": {
         "javascript": ["jsx", "html"]
     },
     "files.autoSaveDelay": 500,
     "liveServer.settings.donotVerifyTags": true,
-    "php-cs-fixer.lastDownload": 1670489189845,
+    "php-cs-fixer.lastDownload": 1673280599406,
     "autoimport.doubleQuotes": true,
     "prettier.jsxSingleQuote": true,
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
-        "javascript": "node",
+        "javascript": "node.exe",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -162,7 +166,6 @@
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
     },
     "tabnine.experimentalAutoImports": true,
-    "files.autoSave": "onFocusChange",
     "editor.multiCursorModifier": "ctrlCmd",
     "C_Cpp.addNodeAddonIncludePaths": true,
     "C_Cpp.autocompleteAddParentheses": true,
@@ -171,7 +174,6 @@
     "blade.format.enable": true,
     "workbench.statusBar.visible": false,
     "html.format.templating": true,
-    "security.workspace.trust.untrustedFiles": "open",
     "workbench.sideBar.location": "right",
     "files.exclude": {
         "**/.classpath": true,
@@ -186,7 +188,8 @@
         "**/*.html": "html",
         "**/templates/**/*.html": "django-html",
         "**/templates/**/*": "django-txt",
-        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+        "*.cshtml": "html"
     },
     "html.format.indentInnerHtml": true,
     "html.format.indentHandlebars": true,
@@ -203,9 +206,6 @@
     "C_Cpp.vcFormat.space.afterCastCloseParenthesis": true,
     "cmake.configureOnOpen": true,
     "cmake.cmakePath": "C:/Program Files/CMake/bin",
-    "[csharp]": {
-        "editor.defaultFormatter": "ms-dotnettools.csharp"
-    },
     "debug.console.fontSize": 15,
     "terminal.integrated.fontSize": 15,
     "explorer.compactFolders": false,
@@ -218,17 +218,9 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "redhat.telemetry.enabled": true,
     "java.configuration.runtimes": [
-        // {
-        //     "name": "JavaSE-1.8",
-        //     "path": "/path/to/jdk-8"
-        // },
-        // {
-        //     "name": "JavaSE-11",
-        //     "path": "/path/to/jdk-11"
-        // },
         {
-            "name": "JavaSE-1.8",
-            "path": "C:/Program Files/Java/jdk1.8.0_351/",
+            "name": "JavaSE-17",
+            "path": "C:/Program Files/Eclipse Adoptium/jdk-17.0.5.8-hotspot/",
             "default": true
         }
     ],
@@ -250,7 +242,7 @@
     "phpcs.autoConfigSearch": false,
     "phpcs.showWarnings": false,
     "settingsSync.ignoredExtensions": ["ikappas.phpcs"],
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorBlinking": "smooth",
     "editor.hideCursorInOverviewRuler": true,
     "terminal.integrated.cursorBlinking": true,
@@ -262,5 +254,23 @@
         "*.lock": "default"
     },
     "editor.accessibilitySupport": "off",
-    "workbench.colorTheme": "Idea intellij light theme"
+    "security.workspace.trust.startupPrompt": "always",
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "formattingToggle.affects": ["editor.formatOnSave"],
+    "files.autoSave": "onFocusChange",
+    "security.workspace.trust.untrustedFiles": "open",
+    "clangd.detectExtensionConflicts": false,
+    "clangd.path": "c:\\Users\\arsns\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\15.0.6\\clangd_15.0.6\\bin\\clangd.exe",
+    "notebook.consolidatedRunButton": true,
+    "git.autofetch": true,
+    "mssql.connections": [
+        {
+            "server": ".\\sqlexpress",
+            "database": "ne_experimental_db",
+            "authenticationType": "Integrated",
+            "encrypt": "Mandatory",
+            "trustServerCertificate": true,
+            "password": ""
+        }
+    ]
 }
